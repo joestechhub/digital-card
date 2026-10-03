@@ -108,6 +108,21 @@
   }
   .socials-row.visible { opacity: 1; transform: translateY(0); }
 
+  .section-label {
+    font-size: 9px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--silver-dim); margin: 2px 2px 8px;
+    opacity: 0; transform: translateY(10px);
+    transition: opacity 0.6s 0.54s cubic-bezier(0.22,1,0.36,1), transform 0.6s 0.54s cubic-bezier(0.22,1,0.36,1);
+  }
+  .section-label.visible { opacity: 1; transform: translateY(0); }
+
+  .projects-row {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-bottom: 16px;
+    opacity: 0; transform: translateY(14px);
+    transition: opacity 0.6s 0.56s cubic-bezier(0.22,1,0.36,1), transform 0.6s 0.56s cubic-bezier(0.22,1,0.36,1);
+  }
+  .projects-row.visible { opacity: 1; transform: translateY(0); }
+
   .social-btn {
     display: flex; align-items: center; justify-content: center;
     gap: 5px; padding: 8px 5px; border-radius: 8px;
@@ -261,11 +276,6 @@
           Instagram
         </a>
 
-        <a class="social-btn" data-platform="website" href="https://joewamwangi.github.io/jtechglobal/" target="_blank">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-1 17.93V18a1 1 0 00-2 0v1.93A8 8 0 014.07 13H6a1 1 0 000-2H4.07A8 8 0 0111 4.07V6a1 1 0 002 0V4.07A8 8 0 0119.93 11H18a1 1 0 000 2h1.93A8 8 0 0113 19.93z"/></svg>
-          Website
-        </a>
-
         <a class="social-btn" data-platform="twitter" href="https://twitter.com/jtechgloballlc" target="_blank">
           <svg class="icon" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           Twitter / X
@@ -274,6 +284,27 @@
         <a class="social-btn" data-platform="facebook" href="https://www.facebook.com/share/18iYxHQuaX/" target="_blank">
           <svg class="icon" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.027 4.388 11.02 10.125 11.927v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.885v2.27h3.328l-.532 3.49h-2.796v8.437C19.612 23.093 24 18.1 24 12.073z"/></svg>
           Facebook
+        </a>
+
+      </div>
+
+      <div class="section-label" id="projectsLabel">Projects</div>
+
+      <div class="projects-row" id="projectsRow">
+
+        <a class="social-btn" data-platform="website" href="https://joewamwangi.github.io/jtechglobal/" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-1 17.93V18a1 1 0 00-2 0v1.93A8 8 0 014.07 13H6a1 1 0 000-2H4.07A8 8 0 0111 4.07V6a1 1 0 002 0V4.07A8 8 0 0119.93 11H18a1 1 0 000 2h1.93A8 8 0 0113 19.93z"/></svg>
+          Website
+        </a>
+
+        <a class="social-btn" data-platform="website" href="https://wekasoko.dpdns.org" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-1 17.93V18a1 1 0 00-2 0v1.93A8 8 0 014.07 13H6a1 1 0 000-2H4.07A8 8 0 0111 4.07V6a1 1 0 002 0V4.07A8 8 0 0119.93 11H18a1 1 0 000 2h1.93A8 8 0 0113 19.93z"/></svg>
+          Wekasoko
+        </a>
+
+        <a class="social-btn" data-platform="website" href="https://petpals.dpdns.org" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-1 17.93V18a1 1 0 00-2 0v1.93A8 8 0 014.07 13H6a1 1 0 000-2H4.07A8 8 0 0111 4.07V6a1 1 0 002 0V4.07A8 8 0 0119.93 11H18a1 1 0 000 2h1.93A8 8 0 0113 19.93z"/></svg>
+          PetPals
         </a>
 
       </div>
@@ -394,6 +425,8 @@
     "TEL;TYPE=WORK,VOICE:+254743048408",
     "EMAIL;TYPE=WORK:jtechgloballlc@gmail.com",
     "URL;TYPE=Website:https://joewamwangi.github.io/jtechglobal/",
+    "URL;TYPE=Wekasoko:https://wekasoko.dpdns.org",
+    "URL;TYPE=PetPals:https://petpals.dpdns.org",
     "URL;TYPE=LinkedIn:https://www.linkedin.com/in/joedavismwangi",
     "URL;TYPE=Instagram:https://instagram.com/joe.wa.mwangi",
     "URL;TYPE=Twitter:https://twitter.com/jtechgloballlc",
@@ -408,7 +441,9 @@
       setTimeout(() => document.getElementById("contactSection").classList.add("visible"), 300);
       setTimeout(() => document.getElementById("divider").classList.add("visible"), 420);
       setTimeout(() => document.getElementById("socialsRow").classList.add("visible"), 480);
-      setTimeout(() => document.getElementById("saveBtn").classList.add("visible"), 560);
+      setTimeout(() => document.getElementById("projectsLabel").classList.add("visible"), 520);
+      setTimeout(() => document.getElementById("projectsRow").classList.add("visible"), 540);
+      setTimeout(() => document.getElementById("saveBtn").classList.add("visible"), 600);
     }, 80);
 
     new QRCode(document.getElementById("qrcode"), {
